@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1105706A2831876300CDF0E9 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110570692831876300CDF0E9 /* AuthButton.swift */; };
 		1135370C2830F043009BF629 /* testSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135370B2830F043009BF629 /* testSwiftUIApp.swift */; };
 		1135370E2830F043009BF629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135370D2830F043009BF629 /* ContentView.swift */; };
 		113537102830F045009BF629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1135370F2830F045009BF629 /* Assets.xcassets */; };
 		113537132830F045009BF629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113537122830F045009BF629 /* Preview Assets.xcassets */; };
+		11CB27E12830F86000F480E6 /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB27E02830F86000F480E6 /* LogoImage.swift */; };
+		11CB27E32830FD0600F480E6 /* AuthForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB27E22830FD0600F480E6 /* AuthForm.swift */; };
+		11CB27E52831007D00F480E6 /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB27E42831007D00F480E6 /* AuthPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110570692831876300CDF0E9 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		113537082830F043009BF629 /* testSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1135370B2830F043009BF629 /* testSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testSwiftUIApp.swift; sourceTree = "<group>"; };
 		1135370D2830F043009BF629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1135370F2830F045009BF629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		113537122830F045009BF629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11CB27E02830F86000F480E6 /* LogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImage.swift; sourceTree = "<group>"; };
+		11CB27E22830FD0600F480E6 /* AuthForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthForm.swift; sourceTree = "<group>"; };
+		11CB27E42831007D00F480E6 /* AuthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				1135370B2830F043009BF629 /* testSwiftUIApp.swift */,
-				1135370D2830F043009BF629 /* ContentView.swift */,
+				11CB27E72831867800F480E6 /* Views */,
 				1135370F2830F045009BF629 /* Assets.xcassets */,
 				113537112830F045009BF629 /* Preview Content */,
 			);
@@ -65,6 +73,34 @@
 				113537122830F045009BF629 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		11CB27E62831866000F480E6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				11CB27E22830FD0600F480E6 /* AuthForm.swift */,
+				110570692831876300CDF0E9 /* AuthButton.swift */,
+				11CB27E42831007D00F480E6 /* AuthPage.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		11CB27E72831867800F480E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1135370D2830F043009BF629 /* ContentView.swift */,
+				11CB27E62831866000F480E6 /* Auth */,
+				11CB27E82831868D00F480E6 /* Helpers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11CB27E82831868D00F480E6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				11CB27E02830F86000F480E6 /* LogoImage.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CB27E32830FD0600F480E6 /* AuthForm.swift in Sources */,
+				1105706A2831876300CDF0E9 /* AuthButton.swift in Sources */,
+				11CB27E12830F86000F480E6 /* LogoImage.swift in Sources */,
 				1135370E2830F043009BF629 /* ContentView.swift in Sources */,
+				11CB27E52831007D00F480E6 /* AuthPage.swift in Sources */,
 				1135370C2830F043009BF629 /* testSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

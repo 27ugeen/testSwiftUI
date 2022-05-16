@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    init() {
+        UITabBar.appearance().backgroundColor = .systemGray6
+    }
     var body: some View {
-        AuthPage()
+        TabView {
+            FeedView()
+                .tabItem {
+                    Label("Feed", systemImage: "house.fill")
+                }
+            AuthPage()
+                .tabItem {
+                    Label("Profile", systemImage: "person.fill")
+                }
+            PlayerView()
+                .tabItem {
+                    Label("Player", systemImage: "music.quarternote.3")
+                }
+            VideoView()
+                .tabItem {
+                    Label("Video", systemImage: "play.rectangle.fill")
+                }
+            RecoderView()
+                .tabItem {
+                    Label("Recoder", systemImage: "mic.fill")
+                }
+        }
     }
 }
 

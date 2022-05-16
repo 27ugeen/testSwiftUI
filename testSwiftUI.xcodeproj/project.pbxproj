@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1105706A2831876300CDF0E9 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110570692831876300CDF0E9 /* AuthButton.swift */; };
+		1105706C2831A0C200CDF0E9 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105706B2831A0C200CDF0E9 /* FeedView.swift */; };
+		110570712831A1BA00CDF0E9 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110570702831A1BA00CDF0E9 /* PlayerView.swift */; };
+		110570732831A1DF00CDF0E9 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110570722831A1DF00CDF0E9 /* VideoView.swift */; };
+		110570752831A1EF00CDF0E9 /* RecoderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110570742831A1EF00CDF0E9 /* RecoderView.swift */; };
 		1135370C2830F043009BF629 /* testSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135370B2830F043009BF629 /* testSwiftUIApp.swift */; };
 		1135370E2830F043009BF629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1135370D2830F043009BF629 /* ContentView.swift */; };
 		113537102830F045009BF629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1135370F2830F045009BF629 /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		110570692831876300CDF0E9 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		1105706B2831A0C200CDF0E9 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		110570702831A1BA00CDF0E9 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		110570722831A1DF00CDF0E9 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		110570742831A1EF00CDF0E9 /* RecoderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoderView.swift; sourceTree = "<group>"; };
 		113537082830F043009BF629 /* testSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1135370B2830F043009BF629 /* testSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testSwiftUIApp.swift; sourceTree = "<group>"; };
 		1135370D2830F043009BF629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +48,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1105706D2831A16D00CDF0E9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1105706B2831A0C200CDF0E9 /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		110570762831A20100CDF0E9 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				110570702831A1BA00CDF0E9 /* PlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		110570772831A20B00CDF0E9 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				110570722831A1DF00CDF0E9 /* VideoView.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		110570782831A21600CDF0E9 /* Recoder */ = {
+			isa = PBXGroup;
+			children = (
+				110570742831A1EF00CDF0E9 /* RecoderView.swift */,
+			);
+			path = Recoder;
+			sourceTree = "<group>";
+		};
 		113536FF2830F043009BF629 = {
 			isa = PBXGroup;
 			children = (
@@ -89,8 +129,12 @@
 			isa = PBXGroup;
 			children = (
 				1135370D2830F043009BF629 /* ContentView.swift */,
+				1105706D2831A16D00CDF0E9 /* Feed */,
 				11CB27E62831866000F480E6 /* Auth */,
 				11CB27E82831868D00F480E6 /* Helpers */,
+				110570762831A20100CDF0E9 /* Player */,
+				110570772831A20B00CDF0E9 /* Video */,
+				110570782831A21600CDF0E9 /* Recoder */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,10 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1105706C2831A0C200CDF0E9 /* FeedView.swift in Sources */,
+				110570752831A1EF00CDF0E9 /* RecoderView.swift in Sources */,
 				11CB27E32830FD0600F480E6 /* AuthForm.swift in Sources */,
 				1105706A2831876300CDF0E9 /* AuthButton.swift in Sources */,
+				110570712831A1BA00CDF0E9 /* PlayerView.swift in Sources */,
 				11CB27E12830F86000F480E6 /* LogoImage.swift in Sources */,
 				1135370E2830F043009BF629 /* ContentView.swift in Sources */,
+				110570732831A1DF00CDF0E9 /* VideoView.swift in Sources */,
 				11CB27E52831007D00F480E6 /* AuthPage.swift in Sources */,
 				1135370C2830F043009BF629 /* testSwiftUIApp.swift in Sources */,
 			);
